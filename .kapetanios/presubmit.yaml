@@ -1,0 +1,21 @@
+version: v1
+kind: Build
+spec:
+  presubmits:
+  - name: test
+    timeout: 30m
+    machine:
+      resource: large
+    steps:
+    - name: echo
+      description: "Echo Hello Kapetanios"
+      runner: alpine:3.10
+      commands:
+      - echo "Hello Kapetanios!"
+
+    - name: echo2
+      description: "Echo Hello Kapetanios2"
+      runner: alpine:3.10
+      commands:
+      - echo "Hello Kapetanios2!"
+
