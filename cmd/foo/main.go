@@ -3,10 +3,13 @@ package main
 import (
 	"errors"
 	"fmt"
+
+	"github.com/nakabonnedebug/foo/pkg/hello"
 )
 
 func main() {
-	fmt.Println("foo")
+	h := &hello.Hello{}
+	h.Greet("foo")
 }
 
 func Bar() error {
