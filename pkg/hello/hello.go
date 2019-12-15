@@ -2,6 +2,7 @@ package hello
 
 import "github.com/k0kubun/pp"
 
+// Hello represents a Hello.
 type Hello struct {
 }
 
